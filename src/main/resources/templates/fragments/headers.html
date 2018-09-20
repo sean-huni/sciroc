@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:fragment="home">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="author" content="Kudzai Sean Huni">
+    <meta name="keywords" content="Rock, Paper, Scissors, Game">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title th:text="${title}">Title-Not-Rendered</title>
+
+    <!--Icons-->
+    <link rel="shortcut icon" th:href="@{/pub/icons/favicon.ico}" href="/pub/icons/favicon.ico">
+    <link rel="icon" type="image/gif" th:href="@{/pub/icons/animated_favicon.gif}"
+          href="/pub/icons/animated_favicon.gif">
+
+    <!--Pre-loader-->
+
+    <!--Stylesheets-->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.8/css/mdb.min.css}"
+          href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.8/css/mdb.min.css">
+    <link rel="stylesheet" th:href="@{/static/css/custom.css}" href="/static/css/custom.css" type="text/css"/>
+    <link rel="stylesheet" th:href="@{https://fonts.googleapis.com/css?family=Roboto}"
+          href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" th:href="@{/static/css/font-awesome.min.css}" href="/static/css/font-awesome.min.css"
+          type="text/css"/>
+    <link rel="stylesheet" th:href="@{/static/css/bootstrap4-neon-glow.min.css}"
+          href="/static/css/bootstrap4-neon-glow.min.css" type="text/css"/>
+    <link rel="stylesheet"
+          th:href="@{https://cdn.datatables.net/v/bs4/dt-1.10.18/r-2.2.2/sc-1.5.0/sl-1.2.6/datatables.min.css}"
+          href="https://cdn.datatables.net/v/bs4/dt-1.10.18/r-2.2.2/sc-1.5.0/sl-1.2.6/datatables.min.css"
+          type="text/css"/>
+    <link rel="stylesheet" th:href="@{/static/css/404.css}" href="/static/css/404.css" type="text/css"/>
+</head>
+</html>

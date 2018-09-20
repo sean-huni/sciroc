@@ -1,0 +1,15 @@
+.img {
+    display: inline;
+}
+
+.font-head {
+    color: #3cbd83;
+}
+
+.game-bg {
+    background-color: #43cb8e !important;
+}
+
+.img-trim-edges {
+    border-radius: 90px !important;
+}

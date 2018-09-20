@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<body>
+
+<div th:fragment="game">
+    <div th:class="container">
+        <h1 class="display-2 font-head">Sciro<span th:class="vim-caret">c</span></h1>
+        <br/>
+        <div class="jumbotron game-bg">
+            <div th:class="container">
+                <div th:class="row">
+                    <div class="col-sm">
+                        <div class="view overlay zoom">
+                            <img class="roc img img-trim-edges" th:src="@{/pub/img/rock.png}">
+                            <div id="btn-roc" class="btn mask flex-center">
+                                <p class="white-text display-3">ROCK</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="view overlay zoom">
+                            <img class="pap img img-trim-edges" th:src="@{/pub/img/paper.png}">
+                            <div id="btn-pap" class="btn mask flex-center">
+                                <p class="white-text display-3">PAPER</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="view overlay zoom">
+                            <img class="sci img img-trim-edges" th:src="@{/pub/img/scissors.png}">
+                            <div id="btn-sci" class="btn mask flex-center">
+                                <p class="white-text display-3">SCISSORS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <!--Match-Statistics-->
+        <h2 class="display-2 font-head">Match-Stats</h2>
+        <div th:replace="~{fragments/tables :: match-stat}"></div>
+
+        <br/>
+        <!--Leaderboard-Statistics-->
+        <h2 class="display-2 font-head">Leaderboard</h2>
+        <div th:replace="~{fragments/tables :: leader-board}"></div>
+    </div>
+</div>
+</body>
+</html>
+
+

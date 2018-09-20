@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<!--head-->
+<head th:replace="~{fragments/headers :: home}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<!--Body Tag-->
+<body>
+
+<!--Body-Fragments-->
+<div class="container" th:replace="~{fragments/body :: game}"></div>
+
+<br/>
+
+<!--Footer-->
+<footer th:replace="~{fragments/footer :: footer-1}">
+    This part of the footer is not supposed to be rendered.
+</footer>
+
+<!--Scripts-->
+<div th:replace="~{fragments/imports :: scripts}"></div>
+</body>
+
+<div th:replace="~{fragments/modals/modals :: code-name}"></div>
+</html>
