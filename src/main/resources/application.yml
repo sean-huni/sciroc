@@ -1,10 +1,3 @@
----
-# Items that apply to ALL profiles:
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://192.168.0.5:8001/eureka/
-
 # Application Properties Here!!!
 ---
 spring:
@@ -21,3 +14,4 @@ server:
     enabled: true
     mime-types: application/json,application/xml,text/html,text/xml,text/plain,text/css,application/javascript
   port: 8000
+

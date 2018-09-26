@@ -11,14 +11,14 @@ $(document).ready(
             function (e) {
                 e.preventDefault();
                 var codeName = $("#codename-inline").val();
-                document.cookie = "codename=" + codeName + "; expires=Wed, 18 Dec 2023 12:00:00 GMT";//expires=Thu, 18 Dec 2013 12:00:00 UTC";
+                document.cookie = "codename=" + codeName + "; expires=Wed, 18 Dec 2025 12:00:00 GMT";//expires=Thu, 18 Dec 2013 12:00:00 UTC";
                 $('#codeNameModal').modal('hide');
             });
 
         $(window).bind('load', function () {
             var cookie = document.cookie;
 
-            if (cookie === "") {
+            if (cookie == null || cookie === '' || cookieCheck === 'no-name') {
                 $('#codeNameModal').modal();
             }
         });
@@ -40,21 +40,6 @@ $(document).ready(
             ]
         });
 
-
-        //     <th>id</th>  ------ fixtureNo
-        //     <th>codeName</th>
-        //     <th>played</th>
-        //     <th>won</th>
-        //     <th>drew</th>
-        //     <th>lost</th>
-        //     <th>points</th>
-        // private Long id;            // Fixture-No. (Total-Matches Played By All Players)
-        // private String codeName;    // Player's name.
-        // private Long played;        // Matches-Played
-        // private Long won;           // Matches-Won
-        // private Long drew;          // Matches-Drawn
-        // private Long lost;          // Matches-Lost
-        // private Long points;        // Total-Points
         var leagueTable = $('#leader-board-table').DataTable({
             "lengthMenu": [[3, 4, 5, 10, 15, 25, 50, 100, -1], [3, 4, 5, 10, 15, 25, 50, 100, "All"]],
             "pageLength": 4,

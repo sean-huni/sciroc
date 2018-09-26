@@ -21,7 +21,7 @@ import java.util.List;
  * CELL      : +27-64-906-8809
  */
 
-@FeignClient(name = "zuul", url = "localhost:8005")
+@FeignClient(name = "zuul", url = "10.133.33.126:8005")
 public interface ZuulAPIGatewayService {
 
     @GetMapping(path = "/api/game/game-engine/pc-move")

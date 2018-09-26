@@ -17,7 +17,7 @@ tagAndPush(){
 rebuild(){
     gradle clean
     gradle build
-    docker build -f Dockerfile -t sciroc-img .
+    docker build -f Dockerfile -t sciroc-img . --no-cache
     tagAndPush
 }
 
